@@ -1,0 +1,6 @@
+project Interpreter is
+
+   for Source_Dirs use ("./**");
+
+end Interpreter;
+

@@ -1,0 +1,25 @@
+V "GNAT Lib v2014"
+A -gnatA
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U literal_integers%b	literal_integers.adb	838a2986 NE OO PK
+
+U literal_integers%s	literal_integers.ads	d0f267c2 EE NE OO PK
+
+D literal_integers.ads	20150105014204 d0f267c2 literal_integers%s
+D literal_integers.adb	20150105014156 53784e44 literal_integers%b
+D system.ads		20140406181358 5fc8ae56 system%s
+X 1 literal_integers.ads
+1K9*Literal_Integers 10E9 15l5 15e21 2|1b14 23l5 23t21
+3R9*Literal_Integer 5r63 7r30 10c9 13e17 2|7r64 8r11 18r30
+5V13*create_literal_integer{3R9} 5>37 2|7b13 12l8 12t30
+5i37 value{integer} 2|7b38 10r19
+7V13*evaluate{integer} 7>23 2|18b13 21l8 21t16
+7r23 li{3R9} 2|18b23 20r14
+12i10*value{integer} 2|10m10 20r17
+X 2 literal_integers.adb
+8r7 li{1|3R9} 10m7 11r14
+

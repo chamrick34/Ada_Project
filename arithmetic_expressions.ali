@@ -1,0 +1,74 @@
+V "GNAT Lib v2014"
+A -gnatA
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U arithmetic_expressions%b  arithmetic_expressions.adb  4fc0c2b0 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+
+U arithmetic_expressions%s  arithmetic_expressions.ads  7d8bc6de EE NE OO PK
+W ids%s			ids.adb			ids.ali
+W literal_integers%s	literal_integers.adb	literal_integers.ali
+
+D arithmetic_expressions.ads  20150105014204 e952189a arithmetic_expressions%s
+D arithmetic_expressions.adb  20150105014222 a692da2a arithmetic_expressions%b
+D ids.ads		20150105014220 442bb986 ids%s
+D interfac.ads		20140406181358 69adb1b9 interfaces%s
+D literal_integers.ads	20150105014204 d0f267c2 literal_integers%s
+D system.ads		20140406181358 5fc8ae56 system%s
+X 1 arithmetic_expressions.ads
+4K9*Arithmetic_Expressions 27E9 41l5 41e27 2|1b14 73l5 73t27
+6E9*Arithmetic_Operator 6e64 18r46 35r20 2|34r47
+6n33*ADD_OP{6E9} 2|60r21
+6n41*SUB_OP{6E9} 2|62r21
+6n49*MUL_OP{6E9} 2|64r21
+6n57*DIV_OP{6E9} 2|66r21
+8E9*Expression_Type 8e63 10r32 27r32
+8n29*CONST_EXPR{8E9} 30r18 2|12r31 54r15
+8n41*VAR_EXPR{8E9} 32r18 2|25r31 56r15
+8n51*BINARY_EXPR{8E9} 34r18 2|39r31 58r15
+10R9*Expression 10d21 12r37 27c9 39e17 2|12r19 25r19 39r19
+10e21 expr_type{8E9} 27r21 29r15 2|53r17
+12P9*Expression_Access(10R9) 14r72 16r52 19r56 20r46 23r29 36r23 37r23 2|7r74
+. 9r13 21r52 22r13 35r57 36r47 37r13 50r30
+14V13*create_constant_expression{12P9} 14>41 2|7b13 15l8 15t34
+14r41 li{5|3R9} 2|7b42 13r18
+16V13*create_var_expression{12P9} 16>36 2|21b13 28l8 28t29
+16r36 var{3|3R9} 2|21b36 26r19
+18V13*create_binary_expression{12P9} 18>39 19>39 19>46 2|34b13 44l8 44t32
+18e39 op{6E9} 2|34b40 40r18
+19p39 expr1{12P9} 21r18 2|35b40 41r21
+19p46 expr2{12P9} 21r36 2|35b47 42r21
+23V13*evaluate{integer} 23>23 2|50b13 61s28 61s52 63s28 63s52 65s28 65s52
+. 67s28 67s52 71l8 71t16
+23p23 expr{12P9} 24r18 2|50b24 53r12 55r32 57r32 59r18 61r38 61r62 63r38
+. 63r62 65r38 65r62 67r38 67r62
+31r16*li{5|3R9} 2|13m12 55r37
+33r16*var{3|3R9} 2|26m12 57r37
+35e16*op{6E9} 2|40m12 59r23
+36p16*expr1{12P9} 2|41m12 61r43 63r43 65r43 67r43
+37p16*expr2{12P9} 2|42m12 61r67 63r67 65r67 67r67
+X 2 arithmetic_expressions.adb
+9p7 expr{1|12P9} 12m7 13r7 14r14
+22p7 expr{1|12P9} 25m7 26r7 27r14
+37p7 expr{1|12P9} 39m7 40r7 41r7 42r7 43r14
+51i7 value{integer} 55m13 57m13 61m19 63m19 65m19 67m19 70r14
+X 3 ids.ads
+1K9*Ids 1|1w24 2r23 3|17e8
+3R9*Id 1|16r41 33r21 2|21r41 3|15e17
+7V13*evaluate{integer} 2|57s22
+X 5 literal_integers.ads
+1K9*Literal_Integers 1|1w6 2r5 5|15e21
+3R9*Literal_Integer 1|14r48 31r20 2|7r49 5|13e17
+7V13*evaluate{integer} 2|55s22
+

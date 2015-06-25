@@ -1,0 +1,51 @@
+V "GNAT Lib v2014"
+A -gnatA
+P ZX
+
+RN
+RV NO_IMPLICIT_LOOPS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U memory%b		memory.adb		316137d9 OO PK
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+
+U memory%s		memory.ads		fa9bdf6e EE NE OO PK
+W ids%s			ids.adb			ids.ali
+
+D ada.ads		20140406181354 3ffc8e18 ada%s
+D a-charac.ads		20140406181358 2d3ec45b ada.characters%s
+D a-chahan.ads		20140406181358 1601a50f ada.characters.handling%s
+D ids.ads		20150105014220 442bb986 ids%s
+D memory.ads		20150105014206 beb066e8 memory%s
+D memory.adb		20150105014220 99d0f43e memory%b
+D system.ads		20140406181358 5fc8ae56 system%s
+X 1 ada.ads
+16K9*Ada 19e8 6|1r6 2r5
+X 2 a-charac.ads
+16K13*Characters 18e19 6|1r10 2r9
+X 3 a-chahan.ads
+36K24*Handling 159e28 6|1w21 2r20
+48V13*Is_Upper{boolean} 6|18s10 34s10
+X 4 ids.ads
+1K9*Ids 17e8 5|1w6 2r5
+3R9*Id 15e17 5|6r28 8r29 6|13r28 30r29
+9V13*get_char{character} 6|17s13 33s13
+X 5 memory.ads
+4K9*Memory 10l5 10e11 6|4b14 41l5 41t11
+6V13*fetch{integer} 6>20 6|13b13 24l8 24t13
+6r20 var{4|3R9} 6|13b20 17r23
+8U14*store 8>21 8>33 6|30b14 39l8 39t13
+8r21 var{4|3R9} 6|30b21 33r23
+8i33 value{integer} 6|30b33 35r22 37r22
+X 6 memory.adb
+6A9 Memory_Block(integer)<character> 7r10 8r10
+7a4 mem1{6A9} 21r19 37m10
+8a4 mem2{6A9} 19r19 35m10
+14i7 value{integer} 19m10 21m10 23r14
+15e7 ch{character} 17m7 18r20 19r24 21r24
+31e7 ch{character} 33m7 34r20 35r15 37r15
+

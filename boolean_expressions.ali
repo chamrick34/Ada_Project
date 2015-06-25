@@ -1,0 +1,52 @@
+V "GNAT Lib v2014"
+A -gnatA
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U boolean_expressions%b	boolean_expressions.adb	db02d56c NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+
+U boolean_expressions%s	boolean_expressions.ads	591365af EE NE OO PK
+W arithmetic_expressions%s  arithmetic_expressions.adb  arithmetic_expressions.ali
+
+D arithmetic_expressions.ads  20150105014204 e952189a arithmetic_expressions%s
+D boolean_expressions.ads  20150105014206 b0417d35 boolean_expressions%s
+D boolean_expressions.adb  20150105014220 6b43a859 boolean_expressions%b
+D ids.ads		20150105014220 442bb986 ids%s
+D interfac.ads		20140406181358 69adb1b9 interfaces%s
+D literal_integers.ads	20150105014204 d0f267c2 literal_integers%s
+D system.ads		20140406181358 5fc8ae56 system%s
+X 1 arithmetic_expressions.ads
+4K9*Arithmetic_Expressions 41e27 2|1w6 2r5
+12P9*Expression_Access(10R9) 2|11r57 21r17 22r17 3|8r58
+23V13*evaluate{integer} 3|28s22 28s46 30s22 30s47 32s22 32s46 34s22 34s47
+. 36s22 36s46 38s22 38s47
+X 2 boolean_expressions.ads
+4K9*Boolean_Expressions 18E9 25l5 25e24 3|1b14 43l5 43t24
+6E9*Relational_Operator 6e74 10r47 20r14 3|7r48
+6n33*EQ_OP{6E9} 3|27r15
+6n40*NE_OP{6E9} 3|29r15
+6n47*LT_OP{6E9} 3|31r15
+6n54*LE_OP{6E9} 3|33r15
+6n61*GT_OP{6E9} 3|35r15
+6n68*GE_OP{6E9} 3|37r15
+8R9*Boolean_Expression 12r47 15r32 18c9 23e17 3|9r48 11r13 23r32
+10V13*create_boolean_expression{8R9} 10>40 11>40 11>47 3|7b13 17l8 17t33
+10e40 op{6E9} 3|7b41 13r18
+11p40 expr1{1|12P9} 13r18 3|8b41 14r21
+11p47 expr2{1|12P9} 13r36 3|8b48 15r21
+15V13*evaluate{boolean} 15>23 3|23b13 41l8 41t16
+15r23 expr{8R9} 3|23b23 26r12 28r32 28r56 30r32 30r57 32r32 32r56 34r32 34r57
+. 36r32 36r56 38r32 38r57
+20e10*op{6E9} 3|13m12 26r17
+21p10*expr1{1|12P9} 3|14m12 28r37 30r37 32r37 34r37 36r37 38r37
+22p10*expr2{1|12P9} 3|15m12 28r61 30r62 32r61 34r62 36r61 38r62
+X 3 boolean_expressions.adb
+11r7 expr{2|8R9} 13m7 14m7 15m7 16r14
+24b7 value{boolean} 28m13 30m13 32m13 34m13 36m13 38m13 40r14
+
